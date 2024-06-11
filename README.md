@@ -35,8 +35,12 @@
 # 拉取镜像
 docker pull zsuroy/docker-for-learner:latest
 
+## 国内加速 | 若上一步失败可以尝试此命令
+docker --debug pull m.daocloud.io/docker.io/zsuroy/docker-for-learner
+
 # 运行
 docker run -e CONTENT="Hello, Welcome to my personal homepage! <br> <br> Every cloud has a silver lining." -e ABOUT="I am Suroy." -p 8080:80 docker-for-learner
+
 
 # 访问
 http://127.0.0.1:8080
