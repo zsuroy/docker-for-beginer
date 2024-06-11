@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Suroy(https://suroy.cn)">
+    <title>My Personal Homepage</title>
+    <link rel="shortcut icon" href="https://suroy.cn/usr/themes/Sunshine/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var content = "{{ content }}";
+            var about = "{{ about }}";
+            if (about.length != 11 || content.length != 13) {
+                document.getElementById("dynamic-content").innerHTML = content;
+                document.getElementById("about").innerHTML = about;
+                console.info("Hi, This is Suroy. (Blog: https://suroy.cn)");
+            }
+
+            var elements = document.querySelectorAll('.fade-in');
+            elements.forEach(function(element) {
+                element.classList.add('visible');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="fade-in">Welcome to My Personal Homepage</h1>
+            <p class="fade-in">This is a brief overview of who I am and what I do.</p>
+        </div>
+    </header>
+    <section id="about" class="container">
+        <img src="suroy.png" alt="Avatar" class="avatar fade-in">
+        <h2 class="fade-in">About Me</h2>
+        <p class="fade-in" id="about" >I am Suroy, a dedicated full-stack developer with a versatile skill set. <br> My expertise spans across front-end, back-end, embedded systems, Linux, cybersecurity, Artificial Intelligence,.</p>
+    </section>
+    <section id="content" class="container">
+        <h2 class="fade-in">Motto</h2>
+        <pre id="dynamic-content" class="fade-in">carpe diem, also grows towards sunlight.</pre>
+    </section>
+    <footer>
+        <div class="container">
+            <p class="fade-in">&copy; 2024-present <a href="https://suroy.cn">Suroy</a>. All rights reserved. ｜ 本网站仅供学习交流使用，不涉及任何商业用途。</p>
+        </div>
+    </footer>
+</body>
+</html>
