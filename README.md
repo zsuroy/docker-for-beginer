@@ -2,7 +2,7 @@
 
 <div align="center">
   <p>
-      <img alt="logo" src="https://raw.githubusercontent.com/zsuroy/docker-for-beginer/assets/logo.png"/>
+      <img alt="logo" src="https://github.com/zsuroy/docker-for-beginer/blob/master/assets/logo.png?raw=true"/>
   </p>
 
   <h1>Docker-Homepage</h1>
