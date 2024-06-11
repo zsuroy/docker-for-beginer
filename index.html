@@ -11,7 +11,7 @@
         document.addEventListener("DOMContentLoaded", function() {
             var content = "{{ content }}";
             var about = "{{ about }}";
-            if (about.length != 11 && content.length != 13) {
+            if (about !== "" && content !== "" .length != 11 && content.length != 13) {
                 document.getElementById("dynamic-content").innerHTML = content;
                 document.getElementById("about").innerHTML = about;
                 console.info("Hi, This is Suroy. (Blog: https://suroy.cn)");
